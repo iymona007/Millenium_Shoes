@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Millennium Shoes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Marck+Script&display=swap">
+<style>
+:root{color-scheme:light;--gold:#c79a52;--gold2:#e7cb94;--ink:#2e2422;--soft:#7a6560;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+body{min-height:100vh;display:flex;justify-content:center;padding:6px 3px 30px;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:#fbf4ee;position:relative;overflow-x:hidden}
+.blob{position:fixed;border-radius:50%;filter:blur(60px);z-index:0;pointer-events:none}
+.b1{width:340px;height:340px;background:#f4cfc9;top:-80px;right:-90px}
+.b2{width:320px;height:320px;background:#efd9ac;top:45%;left:-120px;opacity:.8}
+.b3{width:300px;height:300px;background:#e6d6e8;bottom:-90px;right:-70px;opacity:.8}
+.card{position:relative;z-index:1;width:100%;max-width:760px;border-radius:46px;background:rgba(255,255,255,.55);border:1.5px solid rgba(255,255,255,.9);box-shadow:0 20px 50px rgba(150,105,90,.22);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:30px 6px 28px;text-align:center}
+.logo{width:165px;height:165px;margin:0 auto 18px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 3px var(--gold2),0 0 0 9px rgba(231,203,148,.28),0 14px 30px rgba(170,125,70,.28)}
+.logo svg{width:108px}
+h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:44px;font-weight:700;letter-spacing:3px;line-height:1}
+.sub{font-family:"Cormorant Garamond",Georgia,serif;font-size:20px;font-weight:600;letter-spacing:11px;margin:6px 0 0 12px;color:var(--gold)}
+.div{display:flex;align-items:center;justify-content:center;gap:10px;margin:16px 0}
+.div i{display:block;width:70px;height:1.5px;background:linear-gradient(90deg,transparent,var(--gold))}
+.div i:last-child{transform:scaleX(-1)}
+.div s{width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+.desc{font-size:22px;line-height:1.5;color:#5b4944;margin:0 10px 26px}
+.list{padding:0;display:grid;gap:14px}
+a.btn{display:flex;align-items:center;gap:14px;color:inherit;text-decoration:none;text-align:left;padding:11px 14px 11px 11px;border-radius:34px;background:rgba(255,255,255,.8);border:1.5px solid rgba(231,203,148,.65);box-shadow:0 8px 20px rgba(150,105,90,.14);animation:up .6s both}
+a.btn:nth-child(2){animation-delay:.06s}a.btn:nth-child(3){animation-delay:.12s}a.btn:nth-child(4){animation-delay:.18s}a.btn:nth-child(5){animation-delay:.24s}a.btn:nth-child(6){animation-delay:.3s}a.btn:nth-child(7){animation-delay:.36s}a.btn:nth-child(n+8){animation-delay:.4s}
+a.btn:active{transform:scale(.98)}
+a.btn.first{background:linear-gradient(135deg,#fff5de,#f3dfb4);border-color:var(--gold)}
+.n{flex:none;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:"Cormorant Garamond",Georgia,serif;font-size:28px;font-weight:700;color:#fff;background:linear-gradient(135deg,#e7cb94,#c79a52)}
+.n svg{width:30px;height:30px}
+.tx{flex:1;min-width:0}
+.tx b{display:block;font-size:27px;line-height:1.2;font-weight:700}
+.tx small{display:block;font-size:19px;color:var(--soft);margin-top:3px}
+.ar{flex:none;width:36px;height:36px;border-radius:50%;border:1.5px solid var(--gold);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:24px;line-height:1;padding-bottom:3px}
+.foot{font-family:"Marck Script","Segoe Script","Brush Script MT",cursive;font-size:40px;line-height:1.2;color:var(--gold);margin-top:30px}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){a.btn{animation:none}}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div class="card">
+  <div class="logo">
+    <svg viewBox="672 512 586 408" aria-label="Millennium crown"><g fill="#d8af6b">
+      <polygon points="965,512 1027,718 987,820 943,820 903,718"/>
+      <polygon points="803,669 877,785 870,917 797,803"/>
+      <polygon points="1127,669 1053,785 1060,917 1133,803"/>
+      <polygon points="672,708 753,797 770,920"/>
+      <polygon points="1258,708 1177,797 1160,920"/></g></svg>
+  </div>
+  <h1>MILLENNIUM</h1>
+  <div class="sub">SHOES</div>
+  <div class="div"><i></i><s></s><i></i></div>
+  <p class="desc">Турецкая обувь премиум-класса.<br>Только стильные и удобные модели.<br>Доставка по Узбекистану 3–4 дня.</p>
+  <div class="list">
+    <a class="btn first" href="https://t.me/markabutiktr"><span class="n"><svg viewBox="672 512 586 408" fill="#fff"><polygon points="965,512 1027,718 987,820 943,820 903,718"/><polygon points="803,669 877,785 870,917 797,803"/><polygon points="1127,669 1053,785 1060,917 1133,803"/><polygon points="672,708 753,797 770,920"/><polygon points="1258,708 1177,797 1160,920"/></svg></span><span class="tx"><b>Цена и ассортимент</b><small>Все модели и цены</small></span><span class="ar">›</span></a>
+    <a class="btn" href="https://t.me/millennium_bosonojki"><span class="n"><svg viewBox="672 512 586 408" fill="#fff"><polygon points="965,512 1027,718 987,820 943,820 903,718"/><polygon points="803,669 877,785 870,917 797,803"/><polygon points="1127,669 1053,785 1060,917 1133,803"/><polygon points="672,708 753,797 770,920"/><polygon points="1258,708 1177,797 1160,920"/></svg></span><span class="tx"><b>Ботильоны</b><small>Осень и зима</small></span><span class="ar">›</span></a>
+    <a class="btn" href="https://t.me/millennium_sapogi"><span class="n"><svg viewBox="672 512 586 408" fill="#fff"><polygon points="965,512 1027,718 987,820 943,820 903,718"/><polygon points="803,669 877,785 870,917 797,803"/><polygon points="1127,669 1053,785 1060,917 1133,803"/><polygon points="672,708 753,797 770,920"/><polygon points="1258,708 1177,797 1160,920"/></svg></span><span class="tx"><b>Сапоги</b><small>Изящные и тёплые</small></span><span class="ar">›</span></a>
+    <a class="btn" href="https://t.me/millenniumheels"><span class="n"><svg viewBox="672 512 586 408" fill="#fff"><polygon points="965,512 1027,718 987,820 943,820 903,718"/><polygon points="803,669 877,785 870,917 797,803"/><polygon points="1127,669 1053,785 1060,917 1133,803"/><polygon points="672,708 753,797 770,920"/><polygon points="1258,708 1177,797 1160,920"/></svg></span><span class="tx"><b>Лодочки</b><small>На каждый день и на праздник</small></span><span class="ar">›</span></a>
+    <a class="btn" href="https://t.me/millenniumloafers"><span class="n"><svg viewBox="672 512 586 408" fill="#fff"><polygon points="965,512 1027,718 987,820 943,820 903,718"/><polygon points="803,669 877,785 870,917 797,803"/><polygon points="1127,669 1053,785 1060,917 1133,803"/><polygon points="672,708 753,797 770,920"/><polygon points="1258,708 1177,797 1160,920"/></svg></span><span class="tx"><b>Балетки-лоферы</b><small>Классика и комфорт</small></span><span class="ar">›</span></a>
+    <a class="btn" href="https://t.me/millenniumsneakers"><span class="n"><svg viewBox="672 512 586 408" fill="#fff"><polygon points="965,512 1027,718 987,820 943,820 903,718"/><polygon points="803,669 877,785 870,917 797,803"/><polygon points="1127,669 1053,785 1060,917 1133,803"/><polygon points="672,708 753,797 770,920"/><polygon points="1258,708 1177,797 1160,920"/></svg></span><span class="tx"><b>Кеды</b><small>Лёгкие и удобные</small></span><span class="ar">›</span></a>
+    <a class="btn" href="https://t.me/millennium_kazaki"><span class="n"><svg viewBox="672 512 586 408" fill="#fff"><polygon points="965,512 1027,718 987,820 943,820 903,718"/><polygon points="803,669 877,785 870,917 797,803"/><polygon points="1127,669 1053,785 1060,917 1133,803"/><polygon points="672,708 753,797 770,920"/><polygon points="1258,708 1177,797 1160,920"/></svg></span><span class="tx"><b>Казаки-Cowboy</b><small>Современный стиль</small></span><span class="ar">›</span></a>
+    <a class="btn" href="https://t.me/millennium_botinki"><span class="n"><svg viewBox="672 512 586 408" fill="#fff"><polygon points="965,512 1027,718 987,820 943,820 903,718"/><polygon points="803,669 877,785 870,917 797,803"/><polygon points="1127,669 1053,785 1060,917 1133,803"/><polygon points="672,708 753,797 770,920"/><polygon points="1258,708 1177,797 1160,920"/></svg></span><span class="tx"><b>Ботинки-челси</b><small>Стильные и удобные</small></span><span class="ar">›</span></a>
+    <a class="btn" href="https://t.me/zimnie_botinki"><span class="n"><svg viewBox="672 512 586 408" fill="#fff"><polygon points="965,512 1027,718 987,820 943,820 903,718"/><polygon points="803,669 877,785 870,917 797,803"/><polygon points="1127,669 1053,785 1060,917 1133,803"/><polygon points="672,708 753,797 770,920"/><polygon points="1258,708 1177,797 1160,920"/></svg></span><span class="tx"><b>Зимняя обувь</b><small>Тепло и красиво</small></span><span class="ar">›</span></a>
+    <a class="btn" href="https://t.me/elitnie_sumki"><span class="n"><svg viewBox="672 512 586 408" fill="#fff"><polygon points="965,512 1027,718 987,820 943,820 903,718"/><polygon points="803,669 877,785 870,917 797,803"/><polygon points="1127,669 1053,785 1060,917 1133,803"/><polygon points="672,708 753,797 770,920"/><polygon points="1258,708 1177,797 1160,920"/></svg></span><span class="tx"><b>Брендовые сумки</b><small>Элитные модели</small></span><span class="ar">›</span></a>
+    <a class="btn" href="https://instagram.com/millennium.shoes"><span class="n"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff"/></svg></span><span class="tx"><b>Instagram</b><small>@millennium.shoes</small></span><span class="ar">›</span></a>
+  </div>
+  <p class="foot">Каждый шаг — ваша визитная карточка ♡</p>
+</div>
+</body>
+</html>
